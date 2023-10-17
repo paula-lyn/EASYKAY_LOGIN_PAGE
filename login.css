@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+    font-weight: 600;
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-line {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 ;
+}
+.line {
+    flex: 1;
+    border-top: 2px solid #002628; /* Adjust the color and line thickness as needed */
+}
+.or-text {
+    margin: 0 10px;
+    color: #333;
+}
+.login-form{
+    background-color: #fdfdfd;
+    max-width: 500px;
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+    padding: 40px 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand{
+    color: #20A2AA;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.login{
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    padding: 6px 0;
+    background-color: #20A2AA;
+    color: #fdfdfd;
+    border-radius: 10px;
+}
+#fb{
+    background-color: #1877F2;
+}
+#guest{
+    background-color: #fdfdfd;
+    color: #20A2AA;
+    border: 1px solid #20A2AA;
+}
+#fb-icon{
+    font-size: 16px;
+    padding: 3px 0;
+    float: left;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+#gmail-icon{
+    font-size: 16px;
+    padding: 3px 0;
+    float: left;
+    margin-left: 10px;
+    margin-right: -20px;
+}
+.login:hover{
+    background-color:#002628;
+}
+#guest:hover, #fb:hover{
+    background-color: #002628;
+    color:#fdfdfd;
+    border: none;
+}
+@media screen and (max-width: 480px){
+    body{
+        background-color: #fdfdfd;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-form{
+        box-shadow: none;
+        padding: 0 20px;
+        height: 60vh;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .login{
+        margin: 7px 0;
+        padding: 10px 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 912px){
+    .login-form{  
+        padding: 100px 50px;
+        height: 60vh;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .login{
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+}
